@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bhx20547/repositories/myPortfolio/
+    - export DEPLOYPATH=/home/bhx20547/repositories/mp.codeid.ru/
     - /bin/cp -a * $DEPLOYPATH
