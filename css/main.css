@@ -1,0 +1,614 @@
+/*-----------------font-face-----------------*/
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: url('../fonts/MuseoSansCyrl-500.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-500.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-500.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#Natasha') format('svg'); /* Legacy iOS */
+}
+/*-----------------specification-----------------*/
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	color: #22241b;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.12em;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+p {
+	margin: 0;
+    font-size: 14px;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Natasha';
+	letter-spacing: 0.12em;
+}
+h1 {
+	font-size: 49px;
+	line-height: 1.3em;
+}
+h2 {
+	font-size: 37px;
+	color: #22241b;
+}
+h3 {
+	font-size: 22px;
+	color: #888886;
+	margin-bottom: 35px;
+}
+h4 {
+	font-size: 15px;
+	font-family: 'Museo Sans 900';
+	color: #4b4c47;
+}
+.btn {
+	display: block;
+	border: 1px solid #fff;
+	color: #fff;
+	font-weight: bold;
+	font-size: 13px;
+	width: 177px;
+	padding: 18px 0;
+	border-radius: 100px;
+	text-align: center;
+}
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.j-c-b {
+	justify-content: space-between;
+}
+.text-center {
+	text-align: center;
+}
+/*-----------------header-----------------*/
+.header {
+	background: #20241e url('../img/first-bg.jpg') no-repeat center /cover;
+	color: #fff;
+	padding: 44px 0 82px;
+	letter-spacing: 0.12em;
+}
+.nav {
+	font-family: 'Museo Sans 900';
+	align-items: center;
+}
+.nav__logo {
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav__logo span {
+	font-family: 'Museo Sans 100';
+}
+.nav__list {
+	width: 360px;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+.nav__item:first-child {
+	margin-left: 0;
+}
+.nav__link {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+.nav__email {
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Museo Sans 300';
+	border-bottom: 1px solid #676965;
+}
+/* ------------ Nav hover ------------ */
+.nav__link:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	transition: 0.5s;
+	transform: scaleX(0);
+}
+.nav__link:hover:before {
+	transform: scaleX(1);
+}
+.nav__link:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	transition: 0.5s;
+	transform: scaleY(0);
+}
+.nav__link:hover:after {
+	transform: scaleY(1);
+}
+.nav__email:hover {
+	color: #b5e3a9;
+	border-bottom: 1px solid;
+}
+/*-------------HEADER offer-----------*/
+.offer {
+	margin: 274px 0 255px;
+	text-align: center;
+}
+.offer__subtitle {
+	font-family: 'Museo Sans 100';
+	font-size: 29px;
+	text-transform: uppercase;
+	margin-top: 14px;
+	letter-spacing: 0.12em;
+}
+.arrow-down {
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	background: transparent;
+	display: block;
+	border: 1px solid;
+	color: #fff;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: -1px;
+    line-height: 32px;
+}
+.arrow-down:hover {
+	background: rgba(255, 255, 255, 0.20);
+}
+/*-----------------section ABOUT-----------------*/
+.about {
+	padding: 83px 0 44px;
+}
+.about-flex {
+	margin-top: 72px;
+}
+.background__text p {
+	margin-bottom: 28px;
+	width: 440px;
+	font-size: 15px;
+	font-family: 'Museo Sans 300';
+	line-height: 1.8em;
+	letter-spacing: 0.02em;
+}
+.background__text p:last-child {
+	margin-bottom: 0px;
+}
+.wrapper {
+	width: 470px;
+}
+/*-------------ABOUT merit-----------*/
+.merit__item {
+	width: 125px;
+	text-align: center;
+}
+.merit__list {
+	justify-content: space-around;
+	margin-top: 63px;
+}
+ .merit__number { 
+	width: 72px;
+	height: 72px;
+	background: transparent;
+	border: 1px solid #3d6433;
+	transform: rotate(45deg);
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+.merit__number span {
+	display: block;
+	transform: rotate(-45deg);
+	line-height: 3.5em;
+	color: #3d6433;
+	font-size: 20px;
+	font-family: 'Museo Sans 100';
+	letter-spacing: 0.12em;
+	text-align: center;
+}
+.merit__number:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border: 1px solid #d3e0cb;
+	left: 6px;
+    top: 6px;
+}
+.merit__headline {
+	font-family: 'Museo Sans 100';
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #22241b;
+	margin-top: 38px;
+}
+/*-----------ABOUT connection---------*/
+.connection {
+	margin-top: 66px;
+}
+.connection__list {
+	flex-flow: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.connection__link  {
+	font-size: 14px;
+	color: #204d15;
+	letter-spacing: 0.12em;
+	margin-bottom: 12px;
+	text-decoration: none;
+	border-bottom: 1px solid #becbbb;
+	display: block;
+	padding: 2px;
+}
+.connection__link:hover {
+	color: #239e04;
+	border-bottom: 1px solid;
+}
+.connection__contact {
+	align-items: center;
+	margin-bottom: 30px;
+}
+.icon-User {
+	font-size: 25px;
+	color: #204d15;
+	justify-content: center;
+	display: flex;
+	line-height: 2.5em;
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+	background: #eef1ed;
+}
+.connection__text {
+	margin-left: 15px;
+	color: #797a77;
+	font-size: 14px;
+	font-style: oblique;
+    letter-spacing: 0.02em;
+}
+/*-----------------section SKILLS-----------------*/
+.skills {
+	padding: 44px 0 40px;
+}
+.know {
+	margin-top: 59px;
+}
+.know__wrap {
+	width: 209px;
+	display: flex;
+	align-items: center;
+	margin-right: 28px;
+}
+.know__percent {
+	font-size: 13px;
+	font-family: 'Museo Sans 100';
+	color: #204d15;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border: 1px solid #204d15;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	position: relative;
+}
+.know__percent:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid #bdc1bd;
+	left: 4px;
+    top: 4px;
+}
+.know__title {
+	margin-left: 26px;
+}
+/*-----------------section WORK-----------------*/
+.work {
+	padding: 40px 0 60px;
+}
+.portfolio {
+	margin-top: 54px;
+}
+.portfolio__wrap {
+	position: relative;
+	width: 32%;
+}
+.portfolio__work {
+	display: block;
+	width: 100%;
+}
+.portfolio__overlay:before {
+	content: '';
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transition: 0.6s;
+	transform: scaleX(0);
+}
+.portfolio__overlay:after {
+	content: '';
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	bottom: 5%;
+	left: 5%;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transition: 0.6s;
+	transform: scaleY(0);
+}
+.portfolio__overlay:hover:before {
+	transform: scaleX(1);
+}
+.portfolio__overlay:hover:after {
+	transform: scaleY(1);
+}
+.portfolio__overlay {
+	position: absolute;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.56);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	transition: all 0.7s;
+}
+.portfolio__wrap:hover .portfolio__overlay {
+	opacity: 1;
+}
+.portfolio__title {
+	color: #fff;
+	margin-bottom: 10px;
+}
+.portfolio__link {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	z-index: 1;
+}
+/*--------------------FOOTER-------------------*/
+.footer {
+	padding: 60px 109px;
+}
+.copy {
+	color: #888886;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.copy__elem:last-child:after {
+	display: none;
+}
+.copy__elem:after {
+	content: '/';
+}
+/*-----------------MEDIA QUERIES----------------*/
+/*-------- 992-1200px -------*/
+@media screen and (max-width: 1200px) {
+}
+/*-------- 768-992px -------*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+	.nav__menu {
+		display: none;
+	}
+	h2, h3 {
+		display: flex;
+		justify-content: center;
+	}
+	.background,
+	.merit,
+	.connection {
+		margin-top: 50px;
+	}
+	.about-flex {
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.background__text p,
+	.wrapper,
+	.merit__list {
+		width: auto;
+	}
+	.merit__list {
+		justify-content: space-around;
+    }
+	.connection__wrap {
+		justify-content: space-around;
+	}
+	.connection__contact {
+		margin-bottom: 0px;
+	}
+	.know__wrap {
+		flex-flow: column;
+		margin: 0;
+	}
+	.know__title {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.footer {
+		padding: 90px 0px;
+	}
+	.copy {
+		text-align: center;
+	}
+}
+/*-------- 576-768px -------*/
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+	.know {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.know__wrap:nth-child(1) {
+		margin-bottom: 25px;
+	}
+	.know__wrap:nth-child(2) {
+		margin-bottom: 25px;
+	}
+	.portfolio {
+		flex-direction: column;
+	}
+	.portfolio__wrap {
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+/*-------- 320-576px -------*/
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.header {
+		padding: 40px 0 50px;
+	}
+	.nav {
+		flex-direction: column;
+		text-align: center;
+		line-height: 2em;
+	}
+	h1 {
+		font-size: 39px;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.offer {
+		margin: 100px 0;
+	}
+	.offer__subtitle {
+		font-size: 22px;
+	}
+	.merit__list, 
+	.connection__wrap, 
+	.connection__contact {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.merit__item {
+		margin-bottom: 50px;
+	}
+	.merit__item:last-child {
+		margin-bottom: 0;
+	}
+	.connection__list {
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	.icon-User {
+		margin-bottom: 10px;
+	}
+	.connection__text {
+		margin-left: 0;
+	}
+	.know__wrap {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.know__wrap:nth-child(3) {
+		margin-bottom: 25px;
+	}
+	.know__title {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.portfolio__wrap {
+		width: 60%;
+	}
+	.footer {
+		padding: 50px 0px;
+	}
+}
